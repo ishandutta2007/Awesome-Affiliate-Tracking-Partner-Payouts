@@ -1,205 +1,116 @@
-# Awesome-Affiliate-Tracking-Partner-Payouts
+# Awesome Affiliate Tracking & Partner Payouts [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome-Affiliate-Tracking-Partner-Payouts
+> A curated list of leading SaaS affiliate management software and open-source GitHub projects focused on click attribution, commission management, fraud detection, and self-hosted partner payouts.
 
-**Top Affiliate Tracking Partner Payouts (Opensource) 🌟 Star if you like it! 🌟**
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Click Attribution, Commission Management, Fraud Detection & Self-Hosted Partner Payouts*
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Affiliate Tracking & Partner Payouts**. These tools enable businesses to run their own affiliate and partner programs—tracking clicks, attributing conversions, calculating commissions, and paying partners—from fully managed SaaS platforms with marketplace discovery to open-source engines that give organizations full control over their partner data and payout logic.
-
-
-
-**Examples** include Chargebee Affiliate Management, Impact.com, PartnerStack, Everflow, TUNE, Rewardful, Tapfiliate, FirstPromoter, Refersion, and LeadDyno (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted affiliate tracking, commission engines, and open payout infrastructure. **Critical note**: The open-source landscape has matured significantly—**AffiliateTracking** is the most complete open-source alternative to Rewardful and FirstPromoter, with fraud rules, double-entry commission ledgers, and PayPal/Wise payout files . **Simple KUMA** focuses on media-buyer tracking with cost sync from Meta and Google Ads . **Numok** offers a stable Stripe-integrated affiliate platform . No open-source project matches Impact.com's partner discovery or PartnerStack's ecosystem depth, but for core tracking and payouts, the options are production-capable.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **Impact.com**
-
-  **Enterprise partnership management** platform with affiliate tracking, influencer programs, and fraud detection. **Pricing**: **Pro from $500/month**; Enterprise quote-only . **Free tier**: None. **Best for**: large brands managing complex partner ecosystems across affiliates, influencers, and B2B partners—**trade-off**: enterprise pricing; implementation complexity.
-
-
-
-- **PartnerStack**
-
-  **Partner ecosystem platform** for SaaS companies with affiliate, reseller, and referral programs. **Pricing**: Quote-only; tiered by partner volume . **Free tier**: None. **Best for**: SaaS businesses building channel and affiliate partner programs—**trade-off**: sales-led evaluation.
-
-
-
-- **Everflow**
-
-  **Partner marketing platform** with real-time analytics and fraud prevention. **Pricing**: Quote-only. **Free tier**: None. **Best for**: performance marketers and networks needing granular tracking and attribution—**trade-off**: quote-only; enterprise focus.
-
-
-
-- **Rewardful**
-
-  **Affiliate and referral software for Stripe-native SaaS**. **Pricing**: **Starter $49/month** (covers up to $7,500 monthly affiliate revenue); **Growth $99/month**; **Enterprise** custom. **Managed Payouts** adds **3% processing fee** on payouts . **Free tier**: 14-day trial. **Best for**: Stripe subscription businesses wanting simple affiliate tracking—**trade-off**: revenue-band caps force upgrades as you grow.
-
-
-
-- **Tapfiliate**
-
-  **Affiliate tracking software** with customizable commissions and partner portals. **Pricing**: **Launch $89/month** or **$890/year**; **Scale $179/month** or **$1,790/year**; Enterprise custom . **Free tier**: 7-day trial (Launch) or 14-day trial (Scale). **Best for**: e-commerce and SaaS businesses wanting flexible affiliate program management—**trade-off**: click/conversion metering on lower tiers.
-
-
-
-- **FirstPromoter**
-
-  **Affiliate and referral tracking for SaaS** with multiple billing integrations. **Pricing**: **Starter $49/month**; **Business $99/month**; **Enterprise** custom . **Free tier**: Trial available. **Best for**: SaaS founders wanting affiliate tracking across Stripe and other billing providers—**trade-off**: campaign limits on Starter.
-
-
-
-- **Refersion**
-
-  **Affiliate marketing software** for e-commerce with Shopify and BigCommerce integrations. **Pricing**: **Freemium** marketplace listing; **Growth** and **Scale** tiers available; paid plans start at **$39/month** . **Free tier**: Yes, marketplace listing. **Best for**: e-commerce merchants wanting affiliate management within their stack—**trade-off**: paid tiers required for advanced tracking and API access.
-
-
-
-- **Chargebee Affiliate Management**
-
-  **Affiliate tracking within Chargebee** billing platform. **Pricing**: Included with Chargebee subscriptions; quote-based for advanced. **Free tier**: Limited. **Best for**: Chargebee customers wanting affiliate tracking tied to subscription billing—**trade-off**: requires Chargebee billing platform.
-
-
-
-- **TUNE**
-
-  **Partner marketing platform** (formerly HasOffers) with network and advertiser solutions. **Pricing**: Quote-only. **Free tier**: None. **Best for**: affiliate networks and large advertisers needing scalable tracking infrastructure.
-
-
-
-- **LeadDyno**
-
-  **Affiliate marketing and referral tracking** for e-commerce and SaaS. **Pricing**: Tiered by monthly revenue and affiliates; quote-based. **Free tier**: Trial available. **Best for**: SMBs wanting affiliate tracking with referral program features.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **AffiliateTracking (affiliate-engine)**
-
-  **Open-source affiliate tracking software you host yourself** (AGPL-3.0) — **the most complete open-source alternative to Rewardful, FirstPromoter, Tapfiliate, and Tolt** found in this research . **Features**: **Affiliate links and coupon codes**; **Sales from Stripe, Paddle, Chargebee, Lemon Squeezy, Polar, and Recurly**; **Recurring commissions, refunds, and chargebacks** handled automatically; **13 fraud rules**—self-referrals, click floods, coupon hijacking, bot and datacenter traffic; flagged commissions held before payout; **double-entry commission ledger** so partners see how their balance adds up; **payouts in batches** with PayPal and Wise bulk-pay files and tax form collection; **multi-tier commissions**, usage-based commissions, and partner leaderboards; **JSON API with scoped keys** plus **MCP server** for AI assistants; **GDPR export and erasure** . **Performance**: ~10,000 affiliate link redirects/second in load testing; SQLite built in, Postgres supported when you outgrow it . **Tech stack**: Go, SQLite/Postgres. **Deploy**: Single binary or Docker (`ghcr.io/thebigasif/affiliate-engine:latest`) . **Trade-off**: **Newer project**—community validation limited compared to SaaS platforms; Shopify/WordPress integrations are separate products not in the repo . **Best for**: SaaS and e-commerce businesses wanting full control over affiliate data and payouts without per-revenue fees or vendor lock-in.
-
-
-
-- **Simple KUMA**
-
-  **Self-hosted affiliate and media-buyer tracking** (AGPL-3.0) — **the most feature-rich open-source tracker for performance marketers**, built with PHP + MySQL for shared hosting or VPS . **Features**: **Campaign management** with multi-step wizard; **traffic sources** with token mapping (Facebook, Google/YouTube, TikTok, native, custom); **landing pages and offers** with weighted/rotation flows; **postbacks and pixels** for conversions; **Meta/Facebook cost sync** and **Google Ads API cost sync**; **pre-aggregated stats tables** for speed at scale; **REST API** with Bearer keys for CRUD and reporting; **GeoIP and device detection** bundled; **dark mode** admin UI; CSRF protection and login rate limiting . **Tech stack**: PHP, MySQL/MariaDB. **Deploy**: Self-hosted (web server with document root at `public/`) . **Trade-off**: **Media-buyer focused**—built for tracking paid traffic and affiliate campaigns, not SaaS partner programs with recurring commissions or partner portals . **Best for**: performance marketers and media buyers wanting a self-hosted tracker with ad platform cost sync, without SaaS subscription fees.
-
-
-
-- **Numok**
-
-  **Open-source affiliate program platform with Stripe integration** (open source, stable v1.0.0) — **the most stable open-source Stripe-native affiliate platform** . **Features**: **Full affiliate platform**—tracking and commission management; **Stripe integration** with real-time webhook support; **admin dashboard** for programs, partners, and analytics; **partner portal** for affiliates to track performance and earnings; **Docker support** for easy deployment; **stable API and database schema** with migration support . **Tech stack**: PHP 8.1+, MySQL. **Deploy**: Docker (recommended) or manual installation . **Trade-off**: **Stripe-only billing integration**—no Paddle, Chargebee, or other billing providers; smaller feature set than AffiliateTracking (no fraud rules or MCP server) . **Best for**: SaaS businesses on Stripe wanting a stable, self-hosted affiliate platform with partner portal—without the complexity of a full tracking suite.
-
-
-
-- **Capve**
-
-  **Open-source, self-hosted affiliate tracking for indie and SaaS founders** (open source) — **the most modern Cloudflare-native tracking option**, deployable on Cloudflare's edge . **Features**: **Unique tracking links and click-through cookies**; **server-side conversion attribution**; **MCP server**—connect Claude Code, Cursor, or VS Code to manage campaigns, affiliates, reports, and team by chat (92 tools); **anti-fraud blocklists**, postbacks, traffic source templates, and drilldown reports; **email/password auth** with rate limiting . **Tech stack**: React, Cloudflare Workers, D1. **Deploy**: Cloudflare (one Worker + static assets) . **Trade-off**: **Cloudflare-dependent**—not a traditional VPS deployment; newer project with limited validation; no built-in payout file generation like AffiliateTracking . **Best for**: indie developers and SaaS founders already on Cloudflare wanting lightweight affiliate tracking with AI-agent management via MCP.
-
-
-
-- **RefRef**
-
-  **Open-source referral and affiliate platform** (open source) — **the most focused open-source referral marketing platform**, positioned as an alternative to Refersion and Tolt . **Features**: **Referral marketing** with commission flows; **self-hosted** deployment; **free tier** available; **SaaS dashboard** for managing programs . **Tech stack**: Per repository. **Deploy**: Self-hosted. **Trade-off**: **Smaller project** with limited public documentation in search results; less feature depth than AffiliateTracking or Simple KUMA . **Best for**: developers wanting a lightweight open-source referral platform foundation—willing to evaluate an early-stage project.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **django-referral-system** — Django library for referral tracking (MIT) . **Note**: **Library, not an app**—you bring the Django project and frontend; provides promoters, referral tracking, payouts, and Wise CSV export . **Best for**: Django developers wanting to embed referral tracking in their own application.
-
-- **Dub** — Link tracking with partner program (AGPL-3.0 core; partner program under commercial ee licence) . **Note**: **Partner program is commercially licensed**—only link tracking and analytics are open source . **Best for**: teams wanting open-source link tracking with a paid partner program option.
-
-
-
-**Frameworks for building custom systems**: Combine **AffiliateTracking** for full affiliate tracking and payouts with **Simple KUMA** for media-buyer cost tracking and **Numok** for a Stripe-native partner portal—creating a layered open-source affiliate stack. **None of these match Impact.com's partner discovery or PartnerStack's ecosystem depth**, but for core tracking, fraud detection, and payouts, the options are production-capable.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Affiliate tracking platforms handling partner data and commissions must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate fraud prevention and disclosure practices.
-
-- **The "full affiliate platform" vs. "media-buyer tracker" vs. "Stripe-native" vs. "Cloudflare-native" distinction is critical.** **AffiliateTracking** is a **full affiliate platform**—tracking, fraud rules, commission ledger, payouts, and partner portal . **Simple KUMA** is a **media-buyer tracker**—click/cost/conversion tracking for paid traffic, not SaaS partner programs . **Numok** is **Stripe-native**—affiliate tracking tied to Stripe subscriptions . **Capve** is **Cloudflare-native**—edge-deployed tracking with MCP integration . **Choose based on whether you need full affiliate operations, media buying, Stripe integration, or edge deployment.**
-
-- **AffiliateTracking is the most complete open-source alternative**—13 fraud rules, double-entry ledger, PayPal/Wise payout files, and MCP server . **The trade-off**: newer project; Shopify/WordPress integrations are separate products.
-
-- **Simple KUMA is for media buyers, not SaaS affiliates**—it tracks clicks, costs, and conversions for paid traffic campaigns, with Meta and Google Ads cost sync . **Do not evaluate it for recurring SaaS commissions or partner portals.**
-
-- **Numok is stable and Stripe-integrated**—v1.0.0 with partner portal and Docker deployment . **The trade-off**: Stripe-only; no multi-billing support like AffiliateTracking.
-
-- **Rewardful and FirstPromoter are the SaaS benchmarks**—$49/month entry, but revenue-band caps force upgrades as affiliate revenue grows . **A program at $6K/month attributed revenue pays $990/year on FirstPromoter but $490 on Rewardful—model your growth.**
-
-- **Tapfiliate's tiered pricing** ($89–$179/month) meters clicks and conversions—**model your volume before choosing a tier** .
-
-- Self-hosted open-source solutions require proper infrastructure (Go for AffiliateTracking, PHP/MySQL for Simple KUMA and Numok, Cloudflare for Capve), security hardening, and ongoing maintenance. **Affiliate data includes partner PII and payment information**—ensure your deployment meets your organization's privacy and compliance requirements before processing live commissions.
-
-
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Affiliate-Tracking-Partner-Payouts?style=social)](https://github.com/ishandutta2007/Awesome-Affiliate-Tracking-Partner-Payouts/stargazers)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ishandutta2007/Awesome-Affiliate-Tracking-Partner-Payouts/blob/main/README.md#how-to-contribute)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global affiliate marketing and partnership management software market is estimated at **$12.2 billion to $22.6 billion in 2024–2025**, projected to surpass **$40+ billion by 2030** with an approximate 9–11% CAGR driven by e-commerce expansion and creator-led commerce.
 
-**Made for affiliate managers, growth teams, and organizations building transparent partner tracking solutions.**
+The sector exhibits a **moderately fragmented, bifurcated structure**: enterprise tiers are concentrated around a handful of heavyweight partner automation suites (e.g., Chargebee, Impact.com, TUNE), while the mid-market and SMB tiers remain highly fragmented with specialized point solutions (Stripe-native SaaS tools, self-hosted open-source engines, and ad-buyer trackers) competing on commission transparency, developer flexibility, and fraud mitigation.
 
-Let's make Affiliate Tracking & Partner Payouts more open, data-driven, and fraud-resistant.
+---
+
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Architectural Comparison & Use Cases](#architectural-comparison--use-cases)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## SaaS & Hosted Platforms
+
+The table below lists top commercial SaaS platforms for affiliate program administration, multi-channel partner attribution, and automated payout disbursement, sorted in descending order by estimated company valuation / annual recurring revenue scale.
+
+| Platform | Valuation / Company Scale | Starting Pricing | Free Tier Limits / Trial Limits | Key Focus & Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Chargebee](https://www.chargebee.com/)** | $3.5B Valuation (~$202M ARR) | $599/month (Performance plan; billed annually at $7,188/yr) | Free tier available up to $250,000 in cumulative lifetime billing (0.75% overage fee thereafter); integrates with affiliate engines (FirstPromoter, Tolt, Rekomi) | Subscription billing platform with built-in referral rules, recurring revenue attribution, and tax-compliant payout operations. |
+| **[Impact.com](https://impact.com/)** | $1.5B Valuation (~$270M ARR) | $30/month (Starter tier) to $500/month (Essentials) | 30-day free trial on self-serve Starter plan (credit card required; no permanent free tier for merchants; free for publishers/creators to join marketplace) | Enterprise partnership ecosystem management across classic affiliates, media publishers, influencers, and B2B tech partners with automated contract compliance. |
+| **[TUNE](https://www.tune.com/)** (formerly HasOffers) | ~$200M Parent Group Scale (LON: TUNE / ~£133M market cap) | $899/month (Network Enterprise tier; billed annually) or $1,500/month (Advertiser Scale tier) | No free tier or self-serve free trial; guided sandboxed product demo available upon sales qualification | Performance marketing network and advertiser platform supporting real-time attribution, server-to-server (S2S) postbacks, and 2-way REST APIs. |
+| **[Everflow](https://www.everflow.io/)** | ~$30M+ ARR ($4.3B+ tracked GMV) | $750/month (Core / Starter tier with contract commitment) | No free tier or self-serve free trial; personalized live walkthrough and sandbox demo upon qualification | High-throughput partner marketing, smart link routing, automated anti-fraud click scoring, and deep multi-channel attribution. |
+| **[PartnerStack](https://www.partnerstack.com/)** | ~$29M+ Venture Funding ($2.7B+ all-time GMV) | $0/month subscription (PartnerStack Spark tier with 10% payout transaction fee) | Spark self-serve plan has $0/month subscription fee (10% fee on affiliate payouts); 14-day guided trial for Enterprise & Growth tiers | B2B SaaS partnership management engine covering affiliate networks, reseller agreements, agency co-selling, and marketplace discovery. |
+| **[Refersion](https://www.refersion.com/)** | ~$3.4M–$5.3M ARR ($2B+ tracked GMV) | $39/month (Starter tier, up to 50 monthly affiliate orders) | 14-day free trial on paid plans; free tier available limited to Refersion Marketplace listing | E-commerce affiliate and influencer tracking optimized for Shopify, BigCommerce, and WooCommerce stores with coupon-code attribution. |
+| **[Rewardful](https://www.rewardful.com/)** | ~$2.8M ARR ($68M+ tracked client revenue) | $49/month (Starter tier, up to $7,500 monthly affiliate revenue) | 14-day free trial with full platform access; no permanent free tier | Turnkey Stripe-native affiliate and referral platform designed specifically for SaaS recurring subscriptions and automated commission refunds. |
+| **[FirstPromoter](https://firstpromoter.com/)** | ~$30M+ Tracked Partner Volume/mo | $49/month (Starter tier, up to $5,000 monthly affiliate revenue) | 14-day free trial (no credit card required, full feature access, up to 1,000 affiliates and 2 campaigns); no permanent free tier | Multi-provider subscription affiliate tool integrating with Stripe, Paddle, Chargebee, Recurly, and Braintree with customizable affiliate portals. |
+| **[Tapfiliate](https://tapfiliate.com/)** | ~$580K–$960K ARR (Admitad Group) | $89/month (Launch plan, up to $10,000 affiliate volume) | 7-day free trial on Launch plan; 14-day free trial on Scale plan ($179/month); no permanent free tier | Multi-tier commission management, MLM support, white-label partner dashboards, and flexible REST API hooks for e-commerce and SaaS. |
+| **[LeadDyno](https://www.leaddyno.com/)** | High-volume SMB Merchant Base | $49/month (Starter tier, up to 3,000 unique monthly visitors) | 30-day free trial with full access; no permanent free tier | Fast setup affiliate and referral system featuring social sharing widgets, automated email campaigns, and one-click PayPal mass payout generation. |
+
+---
+
+## Open-Source GitHub Projects
+
+Self-hosted, transparent, and auditable open-source alternatives to proprietary affiliate SaaS platforms. Repositories are ranked below in descending order by GitHub stargazers count, with live badges linking directly to their stargazer community pages.
+
+| Repository | GitHub Stars | Tech Stack | License | Core Capabilities & Architecture |
+| :--- | :--- | :--- | :--- | :--- |
+| **[BranchMetrics/ios-branch-deep-linking-attribution](https://github.com/BranchMetrics/ios-branch-deep-linking-attribution)** | [![Stars](https://img.shields.io/github/stars/BranchMetrics/ios-branch-deep-linking-attribution?style=social&color=white)](https://github.com/BranchMetrics/ios-branch-deep-linking-attribution/stargazers) | Objective-C / Swift | Apache-2.0 | Mobile app deep linking, click-to-install attribution, deferred deep linking, and referral tracking infrastructure across mobile user acquisition funnels. |
+| **[dvygolov/YellowTDS](https://github.com/dvygolov/YellowTDS)** | [![Stars](https://img.shields.io/github/stars/dvygolov/YellowTDS?style=social&color=white)](https://github.com/dvygolov/YellowTDS/stargazers) | PHP / MySQL | Open Source | High-speed traffic distribution system (TDS) for affiliate marketing, click routing, geo-targeting, bot filtration, and dynamic landing page split testing. |
+| **[amicalhq/refref](https://github.com/amicalhq/refref)** | [![Stars](https://img.shields.io/github/stars/amicalhq/refref?style=social&color=white)](https://github.com/amicalhq/refref/stargazers) | TypeScript / Node.js | AGPL-3.0 | Modern open-source referral and affiliate marketing platform designed as a self-hosted alternative to Refersion and Tolt, with JS tracking snippet and partner portal. |
+| **[Refferq/Refferq](https://github.com/Refferq/Refferq)** | [![Stars](https://img.shields.io/github/stars/Refferq/Refferq?style=social&color=white)](https://github.com/Refferq/Refferq/stargazers) | TypeScript / React / Node.js | MIT | Self-hostable referral and affiliate platform tailored for SaaS startups, featuring automated partner invitation links, reward triggers, and webhook management. |
+| **[timbru31/amazon-tag-remover](https://github.com/timbru31/amazon-tag-remover)** | [![Stars](https://img.shields.io/github/stars/timbru31/amazon-tag-remover?style=social&color=white)](https://github.com/timbru31/amazon-tag-remover/stargazers) | JavaScript / WebExtensions | MIT | Open-source browser extension engine that strips affiliate tracking tags, UTM codes, and affiliate parameters for ad-tech transparency and privacy research. |
+| **[intelliants/elitius](https://github.com/intelliants/elitius)** | [![Stars](https://img.shields.io/github/stars/intelliants/elitius?style=social&color=white)](https://github.com/intelliants/elitius/stargazers) | PHP / MySQL | GPL-2.0 | Established self-hosted affiliate tracking system with template customization, banner impression counting, commission calculations, and affiliate dashboard. |
+| **[dfg-ar/numok](https://github.com/dfg-ar/numok)** | [![Stars](https://img.shields.io/github/stars/dfg-ar/numok?style=social&color=white)](https://github.com/dfg-ar/numok/stargazers) | PHP 8.1+ / MySQL / Docker | MIT | Stripe-native affiliate program software that provisions dedicated partner portals, listens for Stripe webhook charges/refunds, and manages payout summaries. |
+| **[soldatov-ss/django-referral-system](https://github.com/soldatov-ss/django-referral-system)** | [![Stars](https://img.shields.io/github/stars/soldatov-ss/django-referral-system?style=social&color=white)](https://github.com/soldatov-ss/django-referral-system/stargazers) | Python / Django | MIT | Pluggable Django referral and affiliate library providing promoter registration, referral link tracking, commission accrual, click analytics, and Wise CSV export. |
+| **[kumatrk/initialrelease](https://github.com/kumatrk/initialrelease)** (Simple KUMA) | [![Stars](https://img.shields.io/github/stars/kumatrk/initialrelease?style=social&color=white)](https://github.com/kumatrk/initialrelease/stargazers) | PHP / MySQL | AGPL-3.0 | Self-hosted performance tracker and media-buyer engine with Meta Ads and Google Ads cost sync, campaign rotation, S2S conversion postbacks, and REST API. |
+| **[ZAK123DSFDF/refearnapp](https://github.com/ZAK123DSFDF/refearnapp)** | [![Stars](https://img.shields.io/github/stars/ZAK123DSFDF/refearnapp?style=social&color=white)](https://github.com/ZAK123DSFDF/refearnapp/stargazers) | Next.js / Cloudflare / Drizzle | AGPL-3.0 | High-scale affiliate tracking and referral management app built for speed on Cloudflare Edge, providing real-time click attribution and Docker deployment. |
+| **[thebigasif/affiliate-tracking](https://github.com/thebigasif/affiliate-tracking)** | [![Stars](https://img.shields.io/github/stars/thebigasif/affiliate-tracking?style=social&color=white)](https://github.com/thebigasif/affiliate-tracking/stargazers) | Go / SQLite / Postgres | AGPL-3.0 | Comprehensive self-hosted affiliate engine: 13 anti-fraud rules, multi-billing webhooks (Stripe, Paddle, Chargebee, Lemon Squeezy), double-entry ledger, PayPal/Wise payouts, and MCP server. |
+| **[prathammahajan13/affiliate-management-system](https://github.com/prathammahajan13/affiliate-management-system)** | [![Stars](https://img.shields.io/github/stars/prathammahajan13/affiliate-management-system?style=social&color=white)](https://github.com/prathammahajan13/affiliate-management-system/stargazers) | Node.js / TypeScript | MIT | Production-ready affiliate management system with multi-tier commission workflows, payout batching, fraud prevention, and merchant analytics. |
+| **[UjjwalSaini07/Affiliate-Postback-Engine](https://github.com/UjjwalSaini07/Affiliate-Postback-Engine)** | [![Stars](https://img.shields.io/github/stars/UjjwalSaini07/Affiliate-Postback-Engine?style=social&color=white)](https://github.com/UjjwalSaini07/Affiliate-Postback-Engine/stargazers) | Next.js / Express / PostgreSQL | MIT | S2S affiliate postback engine and tracking URL generator for recording clicks, attribution callbacks, and affiliate conversion transactions. |
+| **[Cap-go/Capve](https://github.com/Cap-go/Capve)** | [![Stars](https://img.shields.io/github/stars/Cap-go/Capve?style=social&color=white)](https://github.com/Cap-go/Capve/stargazers) | React / Cloudflare Workers / D1 | Open Source | Edge-hosted affiliate and campaign tracker deployable on Cloudflare Workers, featuring anti-fraud blocklists, postbacks, and 92 MCP tools for AI management. |
+
+---
+
+## Architectural Comparison & Use Cases
+
+Choosing between SaaS platforms and self-hosted open-source software depends on compliance posture, billing stack, and whether your program focuses on performance media buying or recurring SaaS subscriptions:
+
+```mermaid
+flowchart TD
+    Start["Determine Your Program Model"] --> Mode{"What is your primary motion?"}
+    Mode -->|"Media Buying / Paid Ad Traffic"| TDS["Traffic Distribution & Ad Tracker<br/>(YellowTDS, Simple KUMA)"]
+    Mode -->|"SaaS Recurring Subscriptions"| Billing{"Billing Stack Integration"}
+    Mode -->|"Enterprise Multi-motion & Resellers"| Ent["Enterprise Suite<br/>(Impact.com, PartnerStack, Chargebee)"]
+    
+    Billing -->|"Stripe Only"| StripeOpt["Turnkey Stripe Solution<br/>(Rewardful, Numok)"]
+    Billing -->|"Multi-Billing (Paddle, Stripe, Lemon Squeezy)"| MultiOpt["Multi-Gateway Engine<br/>(FirstPromoter, AffiliateTracking)"]
+    Billing -->|"Custom Python/Django Backend"| DjangoOpt["Embedded Library<br/>(django-referral-system)"]
+```
+
+### 1. Enterprise Partner Automation vs. Indie SaaS Tools
+* **Impact.com & PartnerStack** excel when you need cross-organization partner discovery, co-selling CRM integrations (Salesforce, HubSpot), and global tax document collection (W-8/W-9) across thousands of affiliates worldwide.
+* **Rewardful & FirstPromoter** represent the benchmark for early-to-growth SaaS founders seeking 5-minute Stripe/Paddle integration, customer churn attribution, and automatic recurring affiliate payouts.
+
+### 2. Full Affiliate Engine vs. Media-Buyer Tracker
+* **Full Affiliate Platforms ([thebigasif/affiliate-tracking](https://github.com/thebigasif/affiliate-tracking), [amicalhq/refref](https://github.com/amicalhq/refref), [dfg-ar/numok](https://github.com/dfg-ar/numok)):** Handle recurring subscription attribution, refund clawbacks, double-entry ledgers, and automated mass-payout file generation (PayPal Payouts, Wise batch payments).
+* **Media-Buyer & Ad Trackers ([kumatrk/initialrelease](https://github.com/kumatrk/initialrelease), [dvygolov/YellowTDS](https://github.com/dvygolov/YellowTDS)):** Built for traffic arbitrage, server-to-server (S2S) postbacks, cost-sync with Meta and Google Ads APIs, and high-frequency redirection.
+
+### 3. Edge-Native and AI-Enabled Operations
+* Next-generation engines like **Capve** and **thebigasif/affiliate-tracking** embed **Model Context Protocol (MCP)** servers, enabling engineering and growth teams to audit partner conversions, adjust commission tiers, and flag fraud vectors directly via AI agent interfaces (Claude Code, Cursor, Windsurf).
+
+---
+
+## How to Contribute
+
+Contributions, project suggestions, and documentation improvements are welcome!
+
+1. Fork this repository.
+2. Create a descriptive branch: `git checkout -b add-my-affiliate-tool`.
+3. Add your tool to `README.md` keeping the Markdown tabular format, ensuring exact pricing and free tier/trial limits are stated.
+4. Verify all GitHub open-source links include live social stargazer badges linking to `/stargazers`.
+5. Open a Pull Request with a short summary of the addition.
+
+---
+
+## Disclaimer
+
+- This curated list is maintained for educational and architectural evaluation purposes. Mention of commercial products or open-source projects does not constitute an endorsement.
+- Storing affiliate records, tracking cookies, and processing partner commission payouts involves handling personal identifiable information (PII) and financial data. Always ensure compliance with GDPR, CCPA, ePrivacy regulations, and local tax requirements prior to deploying production payout infrastructure.
